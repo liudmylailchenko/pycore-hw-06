@@ -48,7 +48,7 @@ class Record:
         for p in self.phones:
             if p.value == phone:
                 return p
-        return None
+        return "Phone not found"
 
     def __str__(self):
         phones_str = '; '.join(p.value for p in self.phones) if self.phones else "No phones"
